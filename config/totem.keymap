@@ -44,6 +44,11 @@
             bindings = <&kp TAB>;
             key-positions = <21 10>;
         };
+
+        combo_windowManagement {
+            bindings = <&mo 4>;
+            key-positions = <33 36>;
+        };
     };
 
     behaviors {
@@ -180,6 +185,15 @@
         &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                  &trans        &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        WindowManagement {
+            bindings = <
+        &trans  &kp LG(LEFT_ARROW)  &kp LG(UP)    &kp LG(RIGHT)  &kp LG(PG_UP)    &trans  &trans  &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &trans
+        &trans  &kp LG(LS(TAB))     &kp LG(DOWN)  &kp LG(TAB)    &kp LG(PG_DN)    &trans  &trans  &trans            &trans             &trans
+&trans  &trans  &trans              &trans        &trans         &trans           &trans  &trans  &trans            &trans             &trans  &trans
+                                    &trans        &trans         &trans           &trans  &trans  &trans
             >;
         };
 
